@@ -22,16 +22,17 @@ body {
   background-color: gold;
   width: 80%;
   margin: auto;
-  height: 80%;
+  height: 80vh;
+  padding: 20px 40px;
 }
 
 .container h2 {
   text-align: center;
   font-size: 10em;
-  line-height: 0.7em;
+  /* line-height: 0.7em; */
   color: #333333;
   margin-top: -10px;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 
 .container h2 span {
@@ -39,11 +40,15 @@ body {
   font-weight: 500;
   letter-spacing: 6px;
   font-size: 0.2em;
+  margin-top: 30px;
 }
 
 .countdown {
   display: flex;
-  margin: 150px 300px;
+  flex-wrap: wrap !important;
+  gap: 40px;
+  margin: auto !important;
+  margin-bottom: 30px;
 }
 
 .countdown div {
@@ -58,6 +63,7 @@ body {
   font-size: 3em;
   font-weight: 700;
   margin-top: -20px;
+  margin-bottom: 30px;
 }
 
 .countdown div::before {
@@ -88,4 +94,15 @@ body {
 
 .countdown #sec::before {
   content: "Seconds";
+}
+
+
+@media screen and (max-width: 768px) {
+  .container{
+    height: 100vh;
+  }
+
+  .container h2{
+    font-size: 7em;
+  }
 }
