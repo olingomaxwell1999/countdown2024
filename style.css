@@ -44,8 +44,8 @@ body {
 }
 
 .countdown {
-  display: flex;
-  flex-wrap: wrap !important;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   gap: 40px;
   margin: auto !important;
   margin-bottom: 30px;
@@ -100,6 +100,10 @@ body {
 @media screen and (max-width: 768px) {
   .container{
     height: 100vh;
+  }
+
+  .countdown{
+    grid-template-columns: repeat(2,1fr);
   }
 
   .container h2{
