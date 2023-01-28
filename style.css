@@ -110,3 +110,9 @@ body {
     font-size: 7em;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .countdown{
+    grid-template-columns: 1fr;
+  }
+}
